@@ -3,95 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zain's Portfolio</title>
-    <link rel="stylesheet" href="beaut.css">
+    <title>Zain Ul Abideen</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+    <div class="background-video">
+        <video autoplay loop muted playsinline>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
     <header>
         <div class="container">
-            <h1>Zain's Portfolio</h1>
+            <img src="profile.jpg" alt="Zain's Profile Picture" class="profile-pic">
+            <h1>Zain Ul Abideen</h1>
+            <br>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#honors">Honors & Awards</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a id="download_resume">Download Resume</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hi, I'm Zain</p>
-        </div>
+    <section id="about" class="content-section">
+        <h2>About</h2>
+        <p>Summa cum laude graduate in Electrical Engineering from Ghulam Ishaq Khan Institute, ranking in the top 3% of the class, with a strong foundation in Artificial Intelligence, Computer Vision, and Image Processing for real-time and autonomous applications. Experienced in developing AI-driven robotics solutions, including an award-winning autonomous vehicle project utilizing advanced image processing and environmental perception techniques. Leadership roles as Director of the university robotics team and Vice President of the Leadership and Entrepreneurship Society reflect a proven ability to manage and execute complex, interdisciplinary projects successfully. Driven by a commitment to advancing AI's capabilities in visual intelligence, with a focus on building robust, dynamic systems that enhance machine interpretation and interaction with visual data in varied environments.</p>
     </section>
 
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <h3>BS in Electrical Engineering</h3>
-                    <p><strong>GIKI, 2024 (Summa Cum Laude)</strong></p>
-                    <p>Graduated with a CGPA of 3.78/4. Ranked in the top 3 of the faculty.</p>
-                </li>
-            </ul>
-        </div>
+    <section id="education" class="content-section">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <h3>BS in Electrical Engineering</h3>
+                <p><strong>Ghulam Ishaq Khan Institute of Engineering Sciences and Technology, 2020-2024</strong></p>
+                <p>Graduated with a CGPA: 3.78/4 (Summa Cum Laude)</p>
+                <p>DHL Winner (8 times)</p>
+            </li>
+            <br>
+            <li>
+                <h3>Higher Secondary (Intermediate) Education </h3>
+                <p><strong>Aga Khan Higher Secondary School, 2018-2020</strong></p>
+                <p>Pre-Engineering</p>
+                <p>A1 Grade</p>
+            </li>
+        </ul>
     </section>
 
-    <section id="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <ul>
-                <li>
-                    <h3>t</h3>
-                    <p><strong>i (2024 - Present)</strong></p>
-                    <p>r.</p>
-                </li>
-                <li>
-                    <h3>AI/ML Engineer</h3>
-                    <p><strong>Bitsol Technologies (2023 - 2024)</strong></p>
-                    <p>Developed AI/ML models for leading AI projects in Pakistan, including brain tumor detection and autonomous car decision-making systems.</p>
-                </li>
-            </ul>
-        </div>
+    <section id="experience" class="content-section">
+        <h2>Experience</h2>
+        <ul>
+            <li>
+                <h3>SAP BTP AI Consultant</h3>
+                <p><strong>TMC Consulting (Jul 2024 - Present)</strong></p>
+                <p> Implemented AI solutions for a FMCG company, enhancing forecasting accuracy and inventory management.</p>
+                <p> Developed robust enterprise data management frameworks using SAP BTP, ABAP, RAP, and Fiori.</p>
+            </li>
+            <br>    
+            <li>
+                <h3>Director of Robotics at Team Techno </h3>
+                <p><strong>Team Techno (Feb 2020 – Jul 2024 )</strong></p>
+                <p> Led the AI team in integrating 8 robotic modules for seamless operation.</p>
+                <p>Managed 3 teams as the module head for various competitions, winning 2 IEEE competitions, including NEO22 and YOUTHROBO23.</p>
+                <p> Conducted workshops for freshmen and sophomore students, introducing them to the world of AI and robotics.</p>
+            </li>
+            <br>
+            <li>
+                <h3>AI/ML Engineering Intern</h3>
+                <p><strong>Bitsol Technologies  (Jun 2023 – Jul 2023)</strong></p>
+                <p> Developed a decision-making algorithm for Autonomous Vehicle using FSM method.</p>
+                <p> Contributed to a project on Brain Tumor Detection using the UNET Model for image segmentation.</p>
+                <p>  Got the hands-on experience with deep learning frameworks and trained a model for scene understanding.</p>
+            </li>
+            <br>
+            <li>
+                <h3>Electrical Engineering Intern </h3>
+                <p><strong>Siemens (Jul 2023 – Aug 2023)</strong></p>
+                <p>  Collaborated with a team to extend transformer lifespan by up to 30% for NTDC using IoT solution.</p>
+                <p> Gained holistic understanding of multinational operations through immersive exploration of diverse departments. </p>
+            </li>
+            <br>
+            
+        </ul>
     </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Autonomous Car Decision-Making System</h3>
-                    <p>Developed a rule-based system using FSM, combining sensors, Google Maps API, and DL models to automate driving decisions.</p>
-                </li>
-                <li>
-                    <h3>Brain Tumor Detection System</h3>
-                    <p>Collaborated with Aga Khan Hospital Karachi on a MATLAB-based MRI analysis tool using the BRATS dataset to detect brain tumors.</p>
-                </li>
-                <li>
-                    <h3>IoT Energy-Aware Computing</h3>
-                    <p>Worked on computation offloading strategies at the edge for IoT devices, optimizing for power efficiency.</p>
-                </li>
-            </ul>
+    <section id="research-projects" class="content-section">
+        <h2>Research Project</h2>
+        <div class="project-highlight">
+            <div class="video-container">
+                <!-- Directly set the src on the video element -->
+                <video class="project-video" controls id="researchVideo">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-description">
+                    <!-- Video description will be populated by JavaScript -->
+                    <p id="videoDescription"></p>
+                </div>
+                <button class="arrow-button left-arrow" onclick="changeVideo(-1)">&#10094;</button>
+                <button class="arrow-button right-arrow" onclick="changeVideo(1)">&#10095;</button>
+            </div>
+            <p id="projectDescription">Designed an advanced autonomous navigation system emphasizing high-accuracy obstacle detection (95%) and sophisticated scene understanding, enabling reliable environmental perception. Leveraging real-time sensor fusion with machine learning, the system seamlessly integrated multiple data streams to enhance object detection and optimize routing, achieving robust performance in complex and dynamic environments. A custom decision-making algorithm supported adaptive path selection and efficient navigation, ensuring safety and precision across various conditions. This project secured 2nd position in the faculty competition, recognized for its innovative approach in autonomous systems and cutting-edge application of computer vision and image processing techniques.</p>
+            <br>
+            <button onclick="downloadReport()">Download Project Report</button>
         </div>
     </section>
+    
+    
+    <section id="projects" class="content-section">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>Brain Tumor Detection System</h3>
+                <p> Developed a brain tumor detection program utilizing MRI images as input, employing UNet for semantic segmentationon the BRATS dataset and clinical MRI scans from Aga Khan Hospital Karachi to achieve enhanced accuracy in tumor detection. </p>
+            </li>
+            <br>
+            <li>
+                <h3>SAP BTP AI (Business AI Solution)</h3>
+                <p>Developed a Business AI solution for a local FMCG company by customizing a machine learning model trained on core ABAP data. The predictive model achieved over 85% accuracy for the production department, demonstrating effective ML model customization and implementation. </p>
+            </li>
+            <br>
+            <li>
+                <h3>Facial Recognition Program </h3>
+                <p>Made a facial recognition program for PC. Machine Learning and Computer Vision (OpenCV) were used for training and recognition in program. Could detect 5 faces at a time.  </p>
+            </li>
+            <br>
+            <li>
+                <h3>Implemented the LIFI System </h3>
+                <p>Li-Fi is a light communication system. Transferred the 8-bit data to smartphone using LIFI with the encoding and decoding of the data.   </p>
+            </li>
+            <br>
+            <li>
+                <h3>Net Cafe Management Program </h3>
+                <p>Developed a C++-based management system for a local internet café as part of a university project. The program efficiently tracked over 100 members, their data usage, billing, and session records. Successfully implemented and deployed the system on-site, resulting in streamlined operations and reduced manual record-keeping by 80%.   </p>
+            </li>
+            <br>
+            <li>
+                <h3>IoT-Based Transformer Life Increment </h3>
+                <p>IoT-based system designed to extend the life of a 65VA transformer for a specified building. Integrated sensors and IoT technology to monitor performance, optimizing transformer efficiency and reducing wear. </p>
+            </li>
+        </ul>
+    </section>
+    
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:zain@example.com">zain@example.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/zain">linkedin.com/in/zain</a></p>
-        </div>
+    <section id="honors" class="content-section">
+        <h2>Honors & Awards</h2>
+    <ul>
+
+        <li>
+            <h3>National TV Interview on Innovation </h3>
+            <p>Invited for a talk on national TV (GEO NEWS), highlighting my research in autonomous systems and its potential in the fields of robotics and AI.</p>
+        </li>
+        <br>
+        <li>
+            <h3>Dean’s Honor List – Ghulam Ishaq Khan Institute of Engineering Sciences and Technology </h3>
+            <p>8 times winner of DHL.</p>
+        </li>
+        <br>
+        <li>
+            <h3>GIKI Alumni Association Scholarship Awardee – GIKI Alumni Association </h3>
+            <p>GIKIAA Scholarship fully-funding my BS degree.</p>
+        </li>
+        <br>
+        <li>
+            <h3>National Electronics Olympiad Winner – IEEE </h3>
+            <p>Won NEO22 (ROBORACE Module) </p>
+        </li>
+        <br>
+
+
+    </ul>
+
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:abideenzain746@gmail.com">abideenzain746@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/zain-ul-abideen-395b02218/">linkedin.com/in/zain</a></p>
+        <p>GitHub: <a href="https://github.com/zainbam">github.com/zainbam</a></p>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Zain. All Rights Reserved.</p>
-        </div>
+        <p>&copy; 2024 Zain Ul Abideen. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

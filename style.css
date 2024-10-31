@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: rgb(87, 173, 230, 0.40);
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.background-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+    position: relative;
+    background-image: url('backgrounpic.jpg');
+    background-size: 100%;  /* Controls the width */
+    background-position: top center;  /* Align from top center */
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Blue overlay */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 122, 255, 0.15);
+    z-index: 1;
+}
+
+/* Container positioning */
+header .container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive handling */
+@media (max-width: 1200px) {
+    header {
+        background-size: cover;  /* Switch to cover for smaller screens */
+        background-position: center top;
+    }
+}
+/* Enhanced profile picture */
+.profile-pic {
+    width: 200px;  /* Increased size */
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    border: 4px solid #fff;  /* White border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* Subtle shadow */
+    object-fit: cover;  /* Ensures image fills circle properly */
+    transition: transform 0.3s ease;  /* Smooth hover effect */
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);  /* Slight zoom on hover */
+}
+
+/* Import a professional font - add this at the top of your CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+/* Header text styling */
+header h1 {
+    font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(0, 0, 0, 0.2);  /* Soft glow effect */
+    padding: 5px 20px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+    );
+    border-radius: 4px;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(3px);
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive adjustment */
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 2.5rem;
+        padding: 8px 16px;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+        padding: 6px 12px;
+    }
+}
+
+/* Navigation styling */
+nav {
+    margin-top: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
+    gap: 1rem;  /* Consistent spacing */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background-color: rgba(87, 173, 230, 0.88);  /* Subtle background */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* Make download resume link stand out */
+#download_resume {
+    background-color: rgba(87, 173, 230, 0.70);
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+#download_resume:hover {
+    background-color: rgba(87, 173, 230, 0.99);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 0;
+        min-height: 350px;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+/* Content Sections */
+.content-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Research Project Styling */
+.project-highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.video-container {
+    position: relative;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 15px;
+}
+
+.project-video {
+    width: 100%;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.video-description {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Arrow Button Styling */
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.left-arrow {
+    left: -30px;
+}
+
+.right-arrow {
+    right: -30px;
+}
+
+.arrow-button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Resume Download Button */
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    cursor: pointer; /* Ensures cursor changes to pointer */
+}
+
+.play-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.play-button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
